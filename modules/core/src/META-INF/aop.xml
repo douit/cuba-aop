@@ -1,0 +1,13 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+
+    <weaver options="-verbose -showWeaveInfo">
+        <!-- only weave classes in our application-specific packages -->
+        <include within="com.company.aop..*"/>
+    </weaver>
+
+    <aspects>
+        <aspect name="com.company.aop.core.ModelSampleAspect"/>
+    </aspects>
+
+</aspectj>
